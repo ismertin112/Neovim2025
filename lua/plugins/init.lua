@@ -129,15 +129,20 @@ return {
   },
 
   { "stevearc/dressing.nvim", event = "VeryLazy", opts = {} },
+  {
+    "jcdickinson/codeium.nvim",
+    event = "InsertEnter",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("codeium").setup {}
+    end,
+  },
 
   {
-    "zbirenbaum/copilot.lua",
-    cmd = "Copilot",
-    event = "InsertEnter",
-    opts = {
-      suggestion = { enabled = true },
-      panel = { enabled = false },
-    },
+    "hrsh7th/nvim-cmp",
+    opts = function(_, opts)
+      table.insert(opts.sources, { name = "codeium" })
+    end,
   },
 
 

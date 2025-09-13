@@ -3,6 +3,16 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
+local Terminal = require("toggleterm.terminal").Terminal
+
+local function run_in_term(cmd)
+  Terminal:new({
+    cmd = cmd,
+    dir = vim.fn.expand("%:p:h"),
+    direction = "float",
+    close_on_exit = false,
+  }):toggle()
+end
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
@@ -17,9 +27,16 @@ map("n", "<leader>tf", "<cmd>TestFile<cr>", { desc = "Run file tests" })
 map("n", "<leader>ts", "<cmd>TestSuite<cr>", { desc = "Run test suite" })
 
 map("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open LazyGit" })
-map("n", "<leader>dp", "<cmd>TermExec cmd='terraform plan'<cr>", { desc = "Terraform plan" })
-map("n", "<leader>da", "<cmd>TermExec cmd='terraform apply'<cr>", { desc = "Terraform apply" })
-map("n", "<leader>db", "<cmd>TermExec cmd='ansible-playbook %'<cr>", { desc = "Run Ansible playbook" })
+map("n", "<leader>dp", function()
+  run_in_term("terraform plan")
+end, { desc = "Terraform plan" })
+map("n", "<leader>da", function()
+  run_in_term("terraform apply")
+end, { desc = "Terraform apply" })
+map("n", "<leader>db", function()
+  run_in_term("ansible-playbook " .. vim.fn.expand("%"))
+end, { desc = "Run Ansible playbook" })
+
 map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
 map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
 map("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })

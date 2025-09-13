@@ -12,6 +12,8 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 | `<leader>tf` | normal | Run all tests in file |
 | `<leader>ts` | normal | Run full test suite |
 | `<leader>gg` | normal | Open LazyGit interface |
+| `<leader>dp` | normal | Run `terraform plan` in file's directory |
+| `<leader>da` | normal | Run `terraform apply` in file's directory |
 | `<leader>dp` | normal | Run `terraform plan` |
 | `<leader>da` | normal | Run `terraform apply` |
 | `<leader>db` | normal | Run `ansible-playbook` on current file |
@@ -58,17 +60,17 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `harpoon` offers fast file marking and hopping around large codebases.
 - `neovim-session-manager` can persist and restore editing sessions.
 - `noice.nvim` and `nvim-notify` present messages and notifications in a modern UI.
-- `copilot.lua` provides AI-powered code suggestions.
+- `codeium.nvim` provides AI-powered code suggestions.
 - `lualine.nvim` and `bufferline.nvim` supply a polished status line and tab bar.
 - `neo-tree.nvim` offers a file explorer with icons and git status.
 - `lspsaga.nvim` wraps LSP actions in a slick UI.
 - `gitsigns.nvim` and `diffview.nvim` improve git integration.
 - `which-key.nvim` reveals keymaps as you type.
 - `indent-blankline.nvim` draws indentation guides.
-- `alpha-nvim` renders a start screen on launch.
+- `alpha-nvim` renders a start screen on launch with a "Happy Hacking" hacker motif.
 - `neoscroll.nvim` enables smooth scrolling; `zen-mode.nvim` and `twilight.nvim` provide distraction-free writing.
 - `nvim-ufo` adds folding previews without auto-collapsing code.
-=======
+
 - `nvim-ufo` adds folding previews.
 
 ## Tips & Tricks
