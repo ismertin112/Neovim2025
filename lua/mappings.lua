@@ -21,6 +21,14 @@ map("n", "<leader>dp", "<cmd>TermExec cmd='terraform plan'<cr>", { desc = "Terra
 map("n", "<leader>da", "<cmd>TermExec cmd='terraform apply'<cr>", { desc = "Terraform apply" })
 map("n", "<leader>db", "<cmd>TermExec cmd='ansible-playbook %'<cr>", { desc = "Run Ansible playbook" })
 map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
+map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
+map("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })
+map("n", "<leader>zz", "<cmd>ZenMode<cr>", { desc = "Zen mode" })
+
+map("n", "<leader>lh", "<cmd>Lspsaga hover_doc<cr>", { desc = "LSP Hover" })
+map("n", "<leader>la", "<cmd>Lspsaga code_action<cr>", { desc = "LSP Code Action" })
+map("n", "<leader>lr", "<cmd>Lspsaga rename<cr>", { desc = "LSP Rename" })
+map("n", "<leader>ld", "<cmd>Lspsaga show_line_diagnostics<cr>", { desc = "Line diagnostics" })
 
 map("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
 map("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Live grep" })

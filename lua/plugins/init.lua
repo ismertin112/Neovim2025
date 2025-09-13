@@ -142,6 +142,103 @@ return {
 
   { "buoto/gotests.nvim", ft = "go" },
 
+  -- UI enhancements
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {},
+  },
+
+  {
+    "nvim-lualine/lualine.nvim",
+    config = function()
+      require "configs.lualine"
+    end,
+  },
+
+  {
+    "akinsho/bufferline.nvim",
+    version = "*",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require "configs.bufferline"
+    end,
+  },
+
+  {
+    "goolord/alpha-nvim",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    config = function()
+      require "configs.alpha"
+    end,
+  },
+
+  { "nvim-tree/nvim-web-devicons", opts = {} },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
+  },
+
+  { "folke/which-key.nvim", event = "VeryLazy", opts = {} },
+
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    cmd = "Neotree",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-tree/nvim-web-devicons",
+      "MunifTanjim/nui.nvim",
+    },
+    opts = {},
+  },
+
+  { "nvimdev/lspsaga.nvim", event = "LspAttach", opts = {} },
+
+  {
+    "lewis6991/gitsigns.nvim",
+    event = "BufReadPre",
+    config = function()
+      require("gitsigns").setup()
+    end,
+  },
+
+  { "sindrets/diffview.nvim", cmd = { "DiffviewOpen" } },
+
+  {
+    "karb94/neoscroll.nvim",
+    event = "WinScrolled",
+    config = function()
+      require("neoscroll").setup()
+    end,
+  },
+
+  {
+    "folke/zen-mode.nvim",
+    cmd = "ZenMode",
+    opts = {},
+    dependencies = { "folke/twilight.nvim" },
+  },
+
+  { "folke/twilight.nvim", cmd = "Twilight" },
+
+  {
+    "kevinhwang91/nvim-ufo",
+    dependencies = { "kevinhwang91/promise-async" },
+    event = "BufReadPost",
+    opts = {},
+  },
+
+  {
+    "nvim-telescope/telescope-ui-select.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    config = function()
+      require("telescope").load_extension "ui-select"
+    end,
+  },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 

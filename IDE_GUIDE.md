@@ -16,6 +16,13 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 | `<leader>da` | normal | Run `terraform apply` |
 | `<leader>db` | normal | Run `ansible-playbook` on current file |
 | `<leader>xx` | normal | Toggle diagnostics with Trouble |
+| `<leader>e` | normal | Toggle Neo-tree file explorer |
+| `<leader>gd` | normal | Open Git diff view |
+| `<leader>zz` | normal | Toggle Zen mode |
+| `<leader>lh` | normal | LSP hover via Lspsaga |
+| `<leader>la` | normal | LSP code actions |
+| `<leader>lr` | normal | Rename symbol |
+| `<leader>ld` | normal | Line diagnostics |
 | `<leader>ff` | normal | Fuzzy find files |
 | `<leader>fg` | normal | Live grep through project |
 | `<leader>ao` | normal | Toggle code outline with Aerial |
@@ -29,7 +36,6 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 | `<leader>sl` | normal | Load saved session |
 | `<leader>ss` | normal | Save current session |
 | `<leader>nm` | normal | Show message history with Noice |
-=======
 
 ## Language Support
 
@@ -53,12 +59,23 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `neovim-session-manager` can persist and restore editing sessions.
 - `noice.nvim` and `nvim-notify` present messages and notifications in a modern UI.
 - `copilot.lua` provides AI-powered code suggestions.
-=======
+- `lualine.nvim` and `bufferline.nvim` supply a polished status line and tab bar.
+- `neo-tree.nvim` offers a file explorer with icons and git status.
+- `lspsaga.nvim` wraps LSP actions in a slick UI.
+- `gitsigns.nvim` and `diffview.nvim` improve git integration.
+- `which-key.nvim` reveals keymaps as you type.
+- `indent-blankline.nvim` draws indentation guides.
+- `alpha-nvim` renders a start screen on launch.
+- `neoscroll.nvim` enables smooth scrolling; `zen-mode.nvim` and `twilight.nvim` provide distraction-free writing.
+- `nvim-ufo` adds folding previews.
 
 ## Tips & Tricks
 
 - Use `jk` in insert mode to quickly exit to normal mode.
 - `;` in normal mode enters command mode.
 - Remember that many NvChad defaults (file explorer, fuzzy finder, statusline) are available out of the box.
+- Press `<leader>` and wait to trigger `which-key` for discoverable shortcuts.
+- `gf` opens the file under the cursor; `gqap` formats a paragraph.
+- `Ctrl-d`/`Ctrl-u` scroll half a page down/up; with `neoscroll` it's silky smooth.
 
 Happy hacking!
