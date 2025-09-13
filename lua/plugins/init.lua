@@ -81,6 +81,67 @@ return {
     end,
   },
 
+  {
+    "stevearc/aerial.nvim",
+    cmd = { "AerialToggle", "AerialOpen" },
+    opts = {},
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    cmd = { "TodoTrouble", "TodoTelescope" },
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+  },
+
+  {
+    "mfussenegger/nvim-dap",
+    dependencies = {
+      "rcarriga/nvim-dap-ui",
+      "theHamsta/nvim-dap-virtual-text",
+      "leoluz/nvim-dap-go",
+    },
+    config = function()
+      require "configs.dap"
+    end,
+  },
+
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    opts = {},
+  },
+
+  {
+    "Shatur/neovim-session-manager",
+    cmd = "SessionManager",
+    opts = {},
+  },
+
+  {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    opts = {},
+    dependencies = {
+      "MunifTanjim/nui.nvim",
+      "rcarriga/nvim-notify",
+    },
+  },
+
+  { "stevearc/dressing.nvim", event = "VeryLazy", opts = {} },
+
+  {
+    "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    opts = {
+      suggestion = { enabled = true },
+      panel = { enabled = false },
+    },
+  },
+
+  { "buoto/gotests.nvim", ft = "go" },
+
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
