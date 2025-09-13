@@ -36,6 +36,7 @@ end, { desc = "Terraform apply" })
 map("n", "<leader>db", function()
   run_in_term("ansible-playbook " .. vim.fn.expand("%"))
 end, { desc = "Run Ansible playbook" })
+
 map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
 map("n", "<leader>e", "<cmd>Neotree toggle<cr>", { desc = "Toggle Neo-tree" })
 map("n", "<leader>gd", "<cmd>DiffviewOpen<cr>", { desc = "Open Diffview" })
@@ -74,3 +75,4 @@ map("n", "<leader>sl", "<cmd>SessionManager load_session<cr>", { desc = "Load se
 map("n", "<leader>ss", "<cmd>SessionManager save_current_session<cr>", { desc = "Save session" })
 
 map("n", "<leader>nm", "<cmd>Noice<cr>", { desc = "Noice messages" })
+map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })

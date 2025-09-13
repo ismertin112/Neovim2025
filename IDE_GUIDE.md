@@ -14,6 +14,8 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 | `<leader>gg` | normal | Open LazyGit interface |
 | `<leader>dp` | normal | Run `terraform plan` in file's directory |
 | `<leader>da` | normal | Run `terraform apply` in file's directory |
+| `<leader>dp` | normal | Run `terraform plan` |
+| `<leader>da` | normal | Run `terraform apply` |
 | `<leader>db` | normal | Run `ansible-playbook` on current file |
 | `<leader>xx` | normal | Toggle diagnostics with Trouble |
 | `<leader>e` | normal | Toggle Neo-tree file explorer |
@@ -68,6 +70,8 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `alpha-nvim` renders a start screen on launch with a "Happy Hacking" hacker motif.
 - `neoscroll.nvim` enables smooth scrolling; `zen-mode.nvim` and `twilight.nvim` provide distraction-free writing.
 - `nvim-ufo` adds folding previews without auto-collapsing code.
+
+- `nvim-ufo` adds folding previews.
 
 ## Tips & Tricks
 
