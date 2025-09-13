@@ -29,6 +29,7 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 | `<leader>sl` | normal | Load saved session |
 | `<leader>ss` | normal | Save current session |
 | `<leader>nm` | normal | Show message history with Noice |
+=======
 
 ## Language Support
 
@@ -52,6 +53,7 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `neovim-session-manager` can persist and restore editing sessions.
 - `noice.nvim` and `nvim-notify` present messages and notifications in a modern UI.
 - `copilot.lua` provides AI-powered code suggestions.
+=======
 
 ## Tips & Tricks
 

@@ -50,3 +50,4 @@ map("n", "<leader>sl", "<cmd>SessionManager load_session<cr>", { desc = "Load se
 map("n", "<leader>ss", "<cmd>SessionManager save_current_session<cr>", { desc = "Save session" })
 
 map("n", "<leader>nm", "<cmd>Noice<cr>", { desc = "Noice messages" })
+map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
