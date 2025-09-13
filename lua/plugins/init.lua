@@ -50,6 +50,19 @@ return {
   },
 
   {
+    "kdheepak/lazygit.nvim",
+    cmd = "LazyGit",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  {
+    "folke/trouble.nvim",
+    cmd = "TroubleToggle",
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    opts = {},
+  },
+
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
       opts.ensure_installed = vim.list_extend(opts.ensure_installed or {}, {

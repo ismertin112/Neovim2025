@@ -15,3 +15,8 @@ map("n", "<leader>tt", "<cmd>ToggleTerm direction=float<cr>", { desc = "Toggle t
 map("n", "<leader>tn", "<cmd>TestNearest<cr>", { desc = "Run nearest test" })
 map("n", "<leader>tf", "<cmd>TestFile<cr>", { desc = "Run file tests" })
 map("n", "<leader>ts", "<cmd>TestSuite<cr>", { desc = "Run test suite" })
+map("n", "<leader>gg", "<cmd>LazyGit<cr>", { desc = "Open LazyGit" })
+map("n", "<leader>dp", "<cmd>TermExec cmd='terraform plan'<cr>", { desc = "Terraform plan" })
+map("n", "<leader>da", "<cmd>TermExec cmd='terraform apply'<cr>", { desc = "Terraform apply" })
+map("n", "<leader>db", "<cmd>TermExec cmd='ansible-playbook %'<cr>", { desc = "Run Ansible playbook" })
+map("n", "<leader>xx", "<cmd>TroubleToggle<cr>", { desc = "Toggle Trouble" })
