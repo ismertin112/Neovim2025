@@ -5,17 +5,12 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 ## Key Shortcuts
 
 | Mapping | Mode | Description |
-| --- | --- | --- |
-| `<C-s>` / `<D-s>` | normal/insert/visual | Save current file |
-| `<leader>tt` | normal | Toggle floating terminal |
-| `<leader>tn` | normal | Run nearest test |
-| `<leader>tf` | normal | Run all tests in file |
-| `<leader>ts` | normal | Run full test suite |
 | `<leader>gg` | normal | Open LazyGit interface |
 | `<leader>dp` | normal | Run `terraform plan` |
 | `<leader>da` | normal | Run `terraform apply` |
 | `<leader>db` | normal | Run `ansible-playbook` on current file |
 | `<leader>xx` | normal | Toggle diagnostics with Trouble |
+=======
 
 ## Language Support
 
@@ -32,6 +27,7 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `nvim-lint` runs linters on save for Go, Terraform, YAML, Ansible, and JSON.
 - `lazygit.nvim` opens a Git TUI with `<leader>gg`.
 - Shortcuts exist to trigger Terraform and Ansible commands in-place.
+=======
 
 ## Tips & Tricks
 
