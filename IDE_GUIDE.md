@@ -68,6 +68,8 @@ This configuration turns Neovim into a full-featured IDE with a focus on Go, Dev
 - `alpha-nvim` renders a start screen on launch.
 - `neoscroll.nvim` enables smooth scrolling; `zen-mode.nvim` and `twilight.nvim` provide distraction-free writing.
 - `nvim-ufo` adds folding previews without auto-collapsing code.
+=======
+- `nvim-ufo` adds folding previews.
 
 ## Tips & Tricks
 

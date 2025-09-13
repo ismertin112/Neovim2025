@@ -140,6 +140,7 @@ return {
     },
   },
 
+
   -- UI enhancements
   {
     "catppuccin/nvim",
@@ -229,6 +230,7 @@ return {
     config = function()
       require "configs.ufo"
     end,
+    opts = {},
   },
 
   {
